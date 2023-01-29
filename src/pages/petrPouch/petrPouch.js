@@ -1,6 +1,7 @@
 import "./petrPouch.scss";
 import { sampleData } from "../../data";
 import ClassListViewer from "../../components/classListViewer/classListViewer";
+import CalendarViewer from "../../components/calendarViewer/calendarViewer";
 import {
   TextField,
   InputAdornment,
@@ -14,6 +15,7 @@ import { useState, useRef } from "react";
 
 export default function PetrPouch() {
   const [listOfClasses, setListOfClasses] = useState([]);
+  const [checked, setChecked] = useState([]);
   const search = useRef(undefined);
 
   const handleSubmit = () => (e) => {
@@ -52,17 +54,18 @@ export default function PetrPouch() {
             <img src="assets/anteater.jpg" alt="" />
           </Grid>
           <Grid item xs={4}>
-            {<ClassListViewer listOfClasses={listOfClasses} />}
+            <ClassListViewer listOfClasses={listOfClasses} checked={checked} setChecked={setChecked}/>
           </Grid>
           <Grid item xs={8}>
+            <CalendarViewer listOfClasses={checked.map(i => listOfClasses[i])}/>
           </Grid>
           <Grid item xs={4}>
             <Button variant="outlined">View Study List</Button>
           </Grid>
           <Grid item xs={8}>
-            <Button variant="contained">Add Class</Button>
-            <Button variant="contained">Drop Class</Button>
-            <Button variant="contained">Waitlist Class</Button>
+            <Button variant="contained">Add Classes</Button>
+            <Button variant="contained">Drop Classes</Button>
+            <Button variant="contained">Waitlist Classes</Button>
           </Grid>
         </Grid>
       </Box>

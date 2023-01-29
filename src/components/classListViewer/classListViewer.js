@@ -12,8 +12,7 @@ import {
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
 
 //https://mui.com/material-ui/react-list/
-export default function ClassListViewer( { listOfClasses } ) {
-  const [checked, setChecked] = useState([]);
+export default function ClassListViewer( { listOfClasses, checked, setChecked } ) {
   const [opened, setOpened] = useState([]);
 
   const handleClick = (value) => () => {

@@ -5,7 +5,9 @@ export const sampleData = [
         name: 'ICS 46',
         location: 'ELH 100',
         time: '9-9:50AM',
+        start: 9,
         type: 'LEC',
+        days: ['Monday', 'Wednesday', 'Friday'],
     },
     {
         id: 1, 
@@ -13,7 +15,9 @@ export const sampleData = [
         name: 'ICS 46',
         location: 'HH 278',
         time: '2-2:50PM',
+        start: 14,
         type: 'DIS',
+        days: ['Monday', 'Wednesday'],
     },
     {
         id: 2, 
@@ -21,7 +25,9 @@ export const sampleData = [
         name: 'H 1B',
         location: 'HIB 100',
         time: '9:30-10:50AM',
+        start: 9,
         type: 'LEC',
+        days: ['Tuesday', 'Thursday'],
     },
     {
         id: 3, 
@@ -29,6 +35,8 @@ export const sampleData = [
         name: 'H 1B',
         location: 'HH 178',
         time: '2-3:20PM',
+        start: 14,
         type: 'SEM',
+        days: ['Tuesday', 'Thursday'],
     },
 ]
