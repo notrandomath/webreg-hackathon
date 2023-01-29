@@ -7,18 +7,18 @@
     background-color: $darkBackground;    
     width: 100%;
     height: 100%;
-    .logo{
+    .left{
         display: flex;
         flex-direction: row;
         align-items: center;
         flex: 1;
-        .left{
+        .leftLogo{
             img{
                 width: 50px;
             }
             margin: 10px 10px 10px 10px;
         }
-        .right{
+        .rightLogo{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -37,22 +37,36 @@
             }
         }
     }
-    .buttons{
-        flex: 3;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        a{
-            text-decoration: none;
-            color: white;
-            font-size: 22px;
-            font-family: 'M PLUS 1';
+    .middle{
+        flex: 5;
+        .middleButtons{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 22px;
+                font-family: 'M PLUS 1';
+            }
+            .logOut{
+                height: 50px;
+                width: 175px;
+                font-size: 20px;
+            }
         }
-        .logOut{
-            height: 50px;
-            width: 175px;
-            font-size: 20px;
+        .middleText{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            h1{
+                color: white;
+            }
         }
+    }
+    .right{
+        flex: 1
     }
 }

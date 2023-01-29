@@ -1,3 +1,4 @@
 add_icon: https://pixabay.com/vectors/instagram-insta-add-add-user-3814050/
 write_icon: https://pixabay.com/vectors/write-create-add-pen-compose-blog-1727488/
-uci_logo; By https://communications.uci.edu/campus-resources/graphic-standards/seal.php, Fair use, https://en.wikipedia.org/w/index.php?curid=59126899
+uci_logo: By https://communications.uci.edu/campus-resources/graphic-standards/seal.php, Fair use, https://en.wikipedia.org/w/index.php?curid=59126899
+anteater: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.redbubble.com%2Fi%2Fsticker%2Fuci-anteater-by-minamihomma%2F47342204.EJUG5&psig=AOvVaw0tX6CdCouC5Hr2M2Ux1-zn&ust=1675052871370000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMjI16z46_wCFQAAAAAdAAAAABAX
