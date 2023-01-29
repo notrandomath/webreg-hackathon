@@ -48,7 +48,7 @@ export default function PetrPouch() {
             </form>
           </Grid>
           <Grid item xs={6}>
-            <h2>Total Units: 12.0</h2>
+            <h2>Total Units: {checked.map(i => listOfClasses[i]).length*4}.0</h2>
           </Grid>
           <Grid item xs={2}>
             <img src="assets/anteater.jpg" alt="" />
