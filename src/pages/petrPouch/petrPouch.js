@@ -50,14 +50,13 @@ export default function PetrPouch() {
           <Grid item xs={6}>
             <h2>Total Units: {checked.map(i => listOfClasses[i]).length*4}.0</h2>
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={2} className="imgGrid">
             <img src="assets/anteater.jpg" alt="" />
           </Grid>
           <Grid item xs={4}>
             <ClassListViewer listOfClasses={[...new Set([...listOfClasses, ...checked.map(i => sampleData[i])])]} checked={checked} setChecked={setChecked}/>
           </Grid>
           <Grid item xs={8}>
-            console.log
             <CalendarViewer listOfClasses={checked.map(i => sampleData[i])}/>
           </Grid>
           <Grid item xs={4}>

@@ -10,7 +10,12 @@
 
         width: 100%;
     }
-    img{
-        width: 50%;
+    .imgGrid{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        img{
+            width: 50%;
+        }
     }
 }
