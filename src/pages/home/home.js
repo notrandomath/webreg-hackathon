@@ -1,6 +1,6 @@
-import "./content.scss";
+import "./home.scss";
 
-export default function Content() {
+export default function Home() {
   return (
     <div className="content">
       Home
