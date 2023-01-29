@@ -67,6 +67,19 @@
         }
     }
     .right{
-        flex: 1
+        flex: 1;
+        .icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-right: 10px;
+            .chat{
+                color: white;
+            }
+            .backpack{
+                margin-left: auto;
+                color: white;
+            }
+        }
     }
 }

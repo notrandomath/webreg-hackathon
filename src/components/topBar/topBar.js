@@ -1,5 +1,6 @@
 import "./topBar.scss";
-import Button from "@mui/material/Button";
+import { Button, IconButton} from "@mui/material";
+import { Chat, Backpack } from "@mui/icons-material";
 import { useLocation } from "react-router-dom";
 
 export default function TopBar() {
@@ -25,7 +26,18 @@ export default function TopBar() {
         }
       </div>
       <div className="right">
-        <Button variant="contained" className="logOut">Log Out</Button>
+      {location.pathname === "/" 
+        ? <Button variant="contained" className="logOut">Log Out</Button>
+        : <div className="icons">
+          <IconButton>
+            <Chat className="chat"/>
+          </IconButton>
+          <IconButton>
+            <Backpack className="backpack"/>
+          </IconButton>
+        </div>
+        }
+        
       </div>
     </div>
   );
