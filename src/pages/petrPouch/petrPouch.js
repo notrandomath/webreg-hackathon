@@ -13,6 +13,21 @@ import {
 import Search from "@mui/icons-material/Search";
 import { useState, useRef } from "react";
 
+function renderAnteater(param) {
+  switch(param) {
+    case 0:
+      return <img src ="assets/anteater.jpeg" alt=""></img>;
+    case 1:
+      return <img src ="assets/anteater2.webp" alt=""></img>;
+    case 2:
+      return<img src ="assets/anteater3.webp" alt=""></img>;
+    case 3:
+      return <img src ="assets/anteater4.webp" alt=""></img>;
+    default:
+      return <img src ="assets/anteater5.webp" alt=""></img>;
+  }
+}
+
 export default function PetrPouch() {
   const [listOfClasses, setListOfClasses] = useState([]);
   const [checked, setChecked] = useState([]);
@@ -51,7 +66,7 @@ export default function PetrPouch() {
             <h2>Total Units: {checked.map(i => listOfClasses[i]).length*4}.0</h2>
           </Grid>
           <Grid item xs={2} className="imgGrid">
-            <img src="assets/anteater.jpg" alt="" />
+            {renderAnteater(checked.length)}
           </Grid>
           <Grid item xs={4}>
             <ClassListViewer listOfClasses={[...new Set([...listOfClasses, ...checked.map(i => sampleData[i])])]} checked={checked} setChecked={setChecked}/>
