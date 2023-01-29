@@ -1,20 +1,16 @@
 @import "./global.scss";
 
 .app {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100vw;
-  height: 100%;
-  text-align: center;
-  background-color: $lightColorOne;
-  .sideBar{
+  height: 100vh;
+  
+  .topBar{
+    height: 70px;
     width: 100%;
-    flex: 1;
   }
   .content{
+    top: 100px;
     width: 100%;
-    flex: 3;
+    height: calc(100vh-70px);
   }
   
 }

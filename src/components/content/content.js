@@ -13,7 +13,9 @@ export default function Content() {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <Search/>
+                <IconButton>
+                  <Search/>
+                </IconButton>
               </InputAdornment>
             ),
           }}

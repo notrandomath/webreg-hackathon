@@ -1,2 +1,3 @@
 add_icon: https://pixabay.com/vectors/instagram-insta-add-add-user-3814050/
 write_icon: https://pixabay.com/vectors/write-create-add-pen-compose-blog-1727488/
+uci_logo; By https://communications.uci.edu/campus-resources/graphic-standards/seal.php, Fair use, https://en.wikipedia.org/w/index.php?curid=59126899

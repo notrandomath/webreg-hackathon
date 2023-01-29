@@ -1,11 +1,11 @@
 import './App.scss';
-import SideBar from './components/sideBar/sideBar';
+import TopBar from './components/topBar/topBar';
 import Content from './components/content/content';
 
 function App() {
   return (
     <div className="app">
-      <SideBar className="sideBar"/>
+      <TopBar className="topBar"/>
       <Content className="content"/>
     </div>
   );
