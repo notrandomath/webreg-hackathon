@@ -1,6 +1,9 @@
 @import "../../global.scss";
 
 .topBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: $darkBackground;    
     width: 100%;
     height: 100%;
@@ -8,7 +11,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 100%;
+        flex: 1;
         .left{
             img{
                 width: 50px;
@@ -22,14 +25,34 @@
             padding: 0px 0px 0px 0px;
 
             h1{
+                font-family: 'M PLUS 1';
                 font-size: 10px;
                 color: white;
             }
             h2{
+                font-family: 'M PLUS 1';
                 font-size: 10px;
                 font-weight: lighter;
                 color: white;
             }
+        }
+    }
+    .buttons{
+        flex: 3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+            font-family: 'M PLUS 1';
+        }
+        .logOut{
+            height: 50px;
+            width: 175px;
+            font-size: 20px;
         }
     }
 }
