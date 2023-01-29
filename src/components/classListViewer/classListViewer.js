@@ -12,7 +12,7 @@ import {
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
 
 //https://mui.com/material-ui/react-list/
-export default function ClassListViewer(listOfClasses) {
+export default function ClassListViewer( { listOfClasses } ) {
   const [checked, setChecked] = useState([]);
   const [opened, setOpened] = useState([]);
 
@@ -44,8 +44,9 @@ export default function ClassListViewer(listOfClasses) {
 
   return (
     <div className="classListViewer">
+        { listOfClasses.length > 0 &&
       <List className="classList" component="nav">
-        {listOfClasses.listOfClasses.map((value) => {
+        {listOfClasses.map((value) => {
           const labelId = `checkbox-list-label-${value.id}`;
           return (
             <ListItem key={value.id} disablePadding className="classEntry">
@@ -58,7 +59,8 @@ export default function ClassListViewer(listOfClasses) {
                     tabIndex={-1}
                   />
                 </ListItemIcon>
-                <ListItemText id={labelId} primary={value.name} />
+                <ListItemText id={labelId} primary={`${value.name} ${value.type}`} />
+                <ListItemText id={labelId} primary={value.code} className="code"/>
                 <IconButton onClick={handleClick(value.id)}>
                   {opened.indexOf(value.id) !== -1 ? (
                     <ExpandLess />
@@ -84,6 +86,7 @@ export default function ClassListViewer(listOfClasses) {
           );
         })}
       </List>
+    }
     </div>
   );
 }
