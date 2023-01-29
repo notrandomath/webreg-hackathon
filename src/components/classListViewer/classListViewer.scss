@@ -1,0 +1,32 @@
+@import "../../global.scss";
+
+.classListViewer{
+    background-color: $lightBackgroundThree;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .classList{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .classEntry{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            .nonNested{
+                background-color: $lightBackgroundFour;
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+            }
+            .nested{
+                background-color: $darkBackgroundTwo;
+                width: 100%;
+                .right{
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

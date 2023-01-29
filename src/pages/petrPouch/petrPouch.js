@@ -1,5 +1,7 @@
 import "./petrPouch.scss"
-import { TextField, InputAdornment, Button, IconButton, Grid, Box, Item } from "@mui/material"
+import { sampleData } from "../../data"
+import ClassListViewer from "../../components/classListViewer/classListViewer"
+import { TextField, InputAdornment, Button, IconButton, Grid, Box } from "@mui/material"
 import Search from "@mui/icons-material/Search"
 
 
@@ -31,7 +33,7 @@ export default function PetrPouch() {
                     <img src="assets/anteater.jpg" alt=""/>
                 </Grid>
                 <Grid item xs={4}>
-                    xs=4
+                    <ClassListViewer listOfClasses={sampleData}/>
                 </Grid>
                 <Grid item xs={8}>
                     xs=8

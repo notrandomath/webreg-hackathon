@@ -1,6 +1,14 @@
 .petrPouch{
+    padding-top: 25px;
     width: 100%;
     height: 100%;
+    .searchBar{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        width: 100%;
+    }
     img{
         width: 50%;
     }

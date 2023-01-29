@@ -18,9 +18,9 @@ export default function TopBar() {
       </div>
       <div className="middle">
         {location.pathname === "/" 
-        ? <div className="middleButtons"><a href="">UCI Home</a>
-        <a href="">Schedule of Classes</a>
-        <a href="">Student Access</a></div>
+        ? <div className="middleButtons"><a href="/pouch">UCI Home</a>
+        <a href="/pouch">Schedule of Classes</a>
+        <a href="/pouch">Student Access</a></div>
         : <div className="middleText"><h1>Petr Pouch</h1></div>
         }
       </div>
