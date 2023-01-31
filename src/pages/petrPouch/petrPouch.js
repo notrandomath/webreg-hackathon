@@ -18,13 +18,13 @@ function renderAnteater(param) {
     case 0:
       return <img src ="assets/anteater.jpeg" alt=""></img>;
     case 1:
-      return <img src ="assets/anteater2.webp" alt=""></img>;
+      return <img src ="assets/anteater2.jpg" alt=""></img>;
     case 2:
-      return<img src ="assets/anteater3.webp" alt=""></img>;
+      return<img src ="assets/anteater3.jpg" alt=""></img>;
     case 3:
-      return <img src ="assets/anteater4.webp" alt=""></img>;
+      return <img src ="assets/anteater4.jpg" alt=""></img>;
     default:
-      return <img src ="assets/anteater5.webp" alt=""></img>;
+      return <img src ="assets/anteater5.jpg" alt=""></img>;
   }
 }
 
@@ -78,7 +78,7 @@ export default function PetrPouch() {
             <Button variant="outlined">View Study List</Button>
           </Grid>
           <Grid item xs={8}>
-            <Button variant="contained">Add Classes</Button>
+            <Button variant="contained">Save Classes</Button>
             <Button variant="contained">Drop Classes</Button>
             <Button variant="contained">Waitlist Classes</Button>
           </Grid>
